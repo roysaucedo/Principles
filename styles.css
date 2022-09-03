@@ -28,14 +28,14 @@ p {
 }
 
 .padding-ctr {
-    padding: 60px;
+    padding: 40px;
 }
 
 .padding-ctr>div {
     background-color: white;
     padding: 60px;
     max-width: 1000px;
-    margin: 0 auto 60px auto;
+    margin: 0 auto 20px auto;
 }
 
 .padding-ctr>div>h2 {
@@ -68,7 +68,7 @@ p {
 
 a {
     text-decoration: none;
-    padding: 10px 40px;
+    padding: 10px 30px;
     border: solid 1px black;
     margin-right: 10px;
     color: #Ffffff;
@@ -87,3 +87,15 @@ a {
 .result-content-div {
     padding: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+    /* For mobile: */
+    .questions-content-div {
+        display: block;
+    }
+
+    .questions-content-div>div>p {
+        margin-bottom: 20px;
+    }
+
+  }

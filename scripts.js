@@ -56,10 +56,24 @@ answer5.addEventListener('change', function handleChange(event) {
   });
 
 
+let resultDiv = document.getElementById('result-div');
+
+
+let resultMainDiv = document.getElementById('result-main-div');
+
+
+let resultsPhase = document.getElementById('results-phrase');
+
+
 //Good Decsion Result
 
 function isGoodDecison(){
     console.log('YES')
+    resultMainDiv.style.display = "block";
+    resultDiv.style.display = "block";
+    resultDiv.style.backgroundColor = "#C9F7CE";
+    resultsPhase.textContent = "This decision ALIGNS with your values.";
+
     
 };
 
@@ -67,17 +81,21 @@ function isGoodDecison(){
 
 function isBadDecison(){
     console.log('NOO')
+    resultMainDiv.style.display = "block";
+    resultDiv.style.display = "block";
+    resultDiv.style.backgroundColor = "#FFCACA";
+    resultsPhase.textContent = "This decision DOES NOT align with your values.";
             
 };
 
 
-let totalValues = [
-    answer1.options[answer1.selectedIndex].value, 
-    answer2.options[answer2.selectedIndex].value,
-    answer3.options[answer3.selectedIndex].value, 
-    answer4.options[answer4.selectedIndex].value,
-    answer5.options[answer5.selectedIndex].value
-];
+// let totalValues = [
+//     answer1.options[answer1.selectedIndex].value, 
+//     answer2.options[answer2.selectedIndex].value,
+//     answer3.options[answer3.selectedIndex].value, 
+//     answer4.options[answer4.selectedIndex].value,
+//     answer5.options[answer5.selectedIndex].value
+// ];
 
 
 
