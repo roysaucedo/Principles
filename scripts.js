@@ -89,24 +89,75 @@ function isBadDecison(){
 };
 
 
-// let totalValues = [
-//     answer1.options[answer1.selectedIndex].value, 
-//     answer2.options[answer2.selectedIndex].value,
-//     answer3.options[answer3.selectedIndex].value, 
-//     answer4.options[answer4.selectedIndex].value,
-//     answer5.options[answer5.selectedIndex].value
-// ];
+let totalValues = [
+    answer1.options[answer1.selectedIndex].value, 
+    answer2.options[answer2.selectedIndex].value,
+    answer3.options[answer3.selectedIndex].value, 
+    answer4.options[answer4.selectedIndex].value,
+    answer5.options[answer5.selectedIndex].value
+];
+
+
 
 
 
 
 function startFramework() {
+    // let =answer1.options[answer1.selectedIndex].value === 'False';
+    let totalValues = [
+        answer1.options[answer1.selectedIndex].value, 
+        answer2.options[answer2.selectedIndex].value,
+        answer3.options[answer3.selectedIndex].value, 
+        answer4.options[answer4.selectedIndex].value,
+        answer5.options[answer5.selectedIndex].value
+    ];
+    //This shows the updated the answers in an array
+    console.log(totalValues);
+
+    //Assigning  true of false to each question submission. In order for the Good Decision
+    //function to run, all answers must be false.
+    let value1 = answer1.options[answer1.selectedIndex].value === 'True';
+    let value2 = answer2.options[answer2.selectedIndex].value === 'True';
+    let value3 = answer3.options[answer3.selectedIndex].value === 'True';
+    let value4 = answer4.options[answer4.selectedIndex].value === 'True';
+    let value5 = answer5.options[answer5.selectedIndex].value === 'True';
+
+    let values = [
+        value1,
+        value2,
+        value3,
+        value4,
+        value5
+    ];
+    //This shows the updated the answers in an array
+    console.log(values);
+
+
+    //Checks if all values in array are true
+function allAreTrue(arr) {
+    return arr.every(element => element === true);
+  };
+
+  console.log(allAreTrue(values)); // 👉️ true
+
+  let trueCheck = allAreTrue(values);
+  console.log(trueCheck); 
+  
+
+    if (trueCheck === true) {
+        isGoodDecison()
+    } else {
+        isBadDecison()
+    };
+
+
+
+
+    // for (let i=0; i<totalValues.length; i++){
         
-        if ( answer1.options[answer1.selectedIndex].value === 'True') {
-            isGoodDecison()
-        } else {
-            isBadDecison()
-        };
+    // }
+    
+        
 
 };
 
