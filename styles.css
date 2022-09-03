@@ -80,6 +80,10 @@ a {
     background-color: #Ffffff;
 }
 
+.result-main-div {
+    display: none;
+}
+
 .result-content-div {
     padding: 40px;
 }
