@@ -1,7 +1,7 @@
 # Principles Framework
 
 ## Purpose
-Everyone has principles that they live by. Most of the time they are stored in the back of our minds. Rarely do we consiously define them and let them drive our decision making process. This tool helps you to define what is important to you then when you encounter a big life decision, you can run them by your set life values rather than making emotional decisons.
+Everyone has principles that they live by. Most of the time they are stored in the back of our minds. Rarely do we consciously define them and let them drive our decision making process. This tool helps you to define what is important to you then when you encounter a big life decision, you can run them by your set life values rather than making emotional decisons.
 
 Logic>Emotions
 
